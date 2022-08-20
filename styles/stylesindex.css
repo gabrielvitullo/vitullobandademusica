@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "productos productos productos" 
+    "servicios servicios servicios"
+    "publicidad publicidad publicidad"
+    "footer footer footer";
+    column-gap: 10px;
+    row-gap: 10px;
+    height: 100vh;
+    
+}
+
+#navegacion ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navegacion ul li {
+    font-size: 20px;
+}
+
+
+header {
+    grid-area: header;
+    background-color: rgb(94, 34, 34);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(68, 26, 26);
+}
+
+article#productos {
+    grid-area: productos;
+    background-color: rgb(156, 68, 68);
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+
+article h1 {
+    margin-left: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    color: white;
+}
+
+article#servicios {
+    grid-area: servicios;
+    background-color: rgb(156, 68, 68);
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(128, 54, 54);
+}
+
+aside {
+    grid-area: publicidad;
+    background-color: rgb(94, 34, 34);
+    text-align: center;
+    padding: 20px;
+}
+
+.border {
+    border: 01px solid rgb(0, 0, 0)
+}
+
+
+    
+
+@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: portrait) {
+    #grilla {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "productos productos productos"
+        "servicios servicios servicios"
+        "publicidad publicidad publicidad"
+        "footer footer footer";
+    
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
+    #grilla {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "header header header"
+        "nav productos productos"
+        "servicios servicios servicios" 
+        " publicidad publicidad"
+        "footer footer footer"; 
+    }
+#navegacion ul{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+}
+
+
+
+@media screen and (min-width: 1200px)  {
+    #grilla {
+     grid-template-areas:
+    "header header header"
+    "nav productos publicidad"
+    "nav servicios publicidad" 
+    "nav footer footer";
+    grid-template-rows: 100px 200px 200px 75px;
+    grid-template-columns: 200px 500px 300px;
+    }
+    #navegacion ul{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 40px;
+    }   
+    
+}
