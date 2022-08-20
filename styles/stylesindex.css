@@ -42,7 +42,7 @@ footer {
 
 article#productos {
     grid-area: productos;
-    background-color: rgb(156, 68, 68);
+    background-image:linear-gradient(to left, rgb(180, 78, 78), rgb(122, 25, 25), rgb(56, 19, 19));
     color: rgb(255, 255, 255);
     margin-left: 10px;
 }
