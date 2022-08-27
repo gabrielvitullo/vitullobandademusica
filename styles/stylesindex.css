@@ -128,15 +128,15 @@ aside {
 
 
 
-@media screen and (min-width: 1200px)  {
+@media screen and (min-width: 1300px)  {
     #grilla {
      grid-template-areas:
     "header header header"
     "nav productos publicidad"
     "nav servicios publicidad" 
-    "nav footer footer";
-    grid-template-rows: 100px 200px 200px 75px;
-    grid-template-columns: 200px 500px 300px;
+    "footer footer footer";
+    grid-template-rows: 100px 150px 500px 75px;
+    grid-template-columns: 200px 820px 300px;
     }
     #navegacion ul{
         flex-direction: column;
