@@ -1,0 +1,38 @@
+.nav {
+    background-color:$color-nav;    
+    padding: 1px;
+    width: 600px;
+    border-radius: 1px;
+    margin-left: 30px;
+
+    ul {
+        background-color: $color-nav;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0%;
+        
+        }
+
+        li {
+            background-color: rgb(112, 59, 59);
+            list-style-type: none;
+            padding: 10px;
+            border-radius: 4px;
+        
+        }
+        
+         a {
+            color: white;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        &:hover {
+            color: rgb(223, 26, 26);
+           }
+
+}
+
+
+
+

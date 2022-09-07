@@ -1,0 +1,135 @@
+@import "./variables/colores.scss";
+
+@import "header";
+@import "footer";
+@import "body";
+@import "nav";
+
+
+aside {
+    text-align: center;
+}
+
+article h1 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+article h2 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    flex:1;
+
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article,
+aside {
+    background-color: rgb(107, 49, 59);
+}
+
+header, footer {
+    background-color: rgb(145, 143, 143);
+    margin: 1px;    
+}
+
+article,
+aside,
+header,
+footer {
+    
+    padding: 1rem;
+    margin: 2px;
+}
+
+
+
+article {
+    flex: 1.2;
+}
+
+aside {
+    flex: 2;
+}
+
+
+.tienda h1 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.tienda {
+    display: flex;
+}
+
+.tienda img {
+    width: 220px;
+    height: 100px;
+    padding: 15px;
+    margin-left: 50px;
+}
+
+.asidehistoria h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.articlehistoria h1 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.fechas h1 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+}
+
+.fechas ul li {
+   list-style: none;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   text-align: center;
+}
+
+.galeria img {
+    width: 80%;
+    height: 30%;
+}
+
+aside h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.formulario {
+   text-align: center;
+
+}
+
+.gridgaleria {
+    display: grid;
+    grid-template-columns: 750px 450px;
+    grid-template-rows: 500px 700px 500px 700px 500px;
+    background-color: rgb(95, 42, 42);
+}
